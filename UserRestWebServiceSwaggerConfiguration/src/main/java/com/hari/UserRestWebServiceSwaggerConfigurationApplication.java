@@ -23,7 +23,7 @@ public class UserRestWebServiceSwaggerConfigurationApplication {
 	}
 
 	/**
-	 * Replace with by configuring yml/properties file as->spring.message.basename
+	 * Replace with by configuring yml/ properties file as->spring.message.basename
 	 *
 	 * @Bean public ResourceBundleMessageSource bundleMessageSource() { final
 	 *       ResourceBundleMessageSource messageSource = new
