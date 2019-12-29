@@ -4,6 +4,8 @@ logging:
 spring:
   jpa:
     show-sql: true
+  messages:
+    basename: messages
 management:
   endpoints:
     web:

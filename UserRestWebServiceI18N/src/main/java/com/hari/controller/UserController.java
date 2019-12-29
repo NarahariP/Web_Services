@@ -8,6 +8,8 @@ import java.util.List;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.MessageSource;
+import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -26,6 +28,9 @@ import com.hari.repository.UserRepositoty;
 public class UserController {
 
 	@Autowired
+	private MessageSource messageSource;
+
+	@Autowired
 	private UserRepositoty userRepository;
 
 	@GetMapping("/users")
@@ -37,7 +42,8 @@ public class UserController {
 	public EntityModel<User> getUserById(@PathVariable int id) {
 
 		/**
-		 * userRepository.findById(id).orElseThrow(() -> new UserNotFoundException("Id -" + id));
+		 * userRepository.findById(id).orElseThrow(() -> new UserNotFoundException("Id
+		 * -" + id));
 		 *
 		 * return new
 		 * EntityModel<>(userRepository.findById(id).get()).add(linkTo(methodOn(this.getClass()).getAllUsers()).withRel("all-users"));
@@ -58,4 +64,10 @@ public class UserController {
 	public void deleteUserById(@PathVariable int id) {
 		userRepository.deleteById(id);
 	}
+
+	@GetMapping("/welcome")
+	public String welcomeMessage() {
+		return messageSource.getMessage("welcome.message", null, LocaleContextHolder.getLocale());
+	}
+
 }
