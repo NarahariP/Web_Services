@@ -28,8 +28,7 @@ public class UserRestWebServiceSwaggerConfigurationV200Application {
 	 * @Bean public ResourceBundleMessageSource bundleMessageSource() { final
 	 *       ResourceBundleMessageSource messageSource = new
 	 *       ResourceBundleMessageSource(); messageSource.setBasename("messages");
-	 *       return messageSource; 
-	 *  }
+	 *       return messageSource; }
 	 */
 
 }
