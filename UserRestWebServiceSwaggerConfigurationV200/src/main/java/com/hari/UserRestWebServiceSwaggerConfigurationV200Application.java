@@ -28,8 +28,12 @@ public class UserRestWebServiceSwaggerConfigurationV200Application {
 	 * @Bean public ResourceBundleMessageSource bundleMessageSource() { final
 	 *       ResourceBundleMessageSource messageSource = new
 	 *       ResourceBundleMessageSource(); messageSource.setBasename("messages");
+<<<<<<< HEAD
 	 *       return messageSource; 
 	 *  }
+=======
+	 *       return messageSource; }
+>>>>>>> branch 'master' of https://github.com/NarahariP/Web_Services.git
 	 */
 
 }
