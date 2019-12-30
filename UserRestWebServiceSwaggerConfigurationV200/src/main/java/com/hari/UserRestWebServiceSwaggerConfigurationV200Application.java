@@ -9,10 +9,10 @@ import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver;
 
 @SpringBootApplication
-public class UserRestWebServiceSwaggerConfigurationVesion200Application {
+public class UserRestWebServiceSwaggerConfigurationV200Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UserRestWebServiceSwaggerConfigurationVesion200Application.class, args);
+		SpringApplication.run(UserRestWebServiceSwaggerConfigurationV200Application.class, args);
 	}
 
 	@Bean
@@ -30,4 +30,5 @@ public class UserRestWebServiceSwaggerConfigurationVesion200Application {
 	 *       ResourceBundleMessageSource(); messageSource.setBasename("messages");
 	 *       return messageSource; }
 	 */
+
 }

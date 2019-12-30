@@ -4,7 +4,7 @@ import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class UserRestWebServiceSwaggerConfigurationVesion200ApplicationTests {
+class UserRestWebServiceSwaggerConfigurationV200ApplicationTests {
 
 	@Test
 	void contextLoads() {

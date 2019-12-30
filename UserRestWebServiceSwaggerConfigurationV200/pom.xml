@@ -13,7 +13,7 @@
 	<artifactId>UserRestWebServiceSwaggerConfigurationVersion-2.0.0</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>UserRestWebServiceSwaggerConfigurationVersion-2.0.0</name>
-	<description>UserRestWebServiceSwaggerConfigurationVesion200</description>
+	<description>UserRestWebServiceSwaggerConfigurationV200</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -94,4 +94,3 @@
 	</build>
 
 </project>
-
