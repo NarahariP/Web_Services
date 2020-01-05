@@ -1,0 +1,20 @@
+logging:
+  level:
+    org.springframework: info
+spring:
+  jpa:
+    show-sql: true
+  messages:
+    basename: messages
+  security:
+    user:
+      name: username
+      password: password
+management:
+  endpoints:
+    web:
+      exposure:
+        include:  "*"     
+server:
+  error:
+    include-stacktrace: never
